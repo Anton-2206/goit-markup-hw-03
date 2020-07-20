@@ -6,6 +6,19 @@
   --text-white-color: #ffffff
   --text-transparent-color: rgba(255, 255, 255, 0.6)
 }
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  pad: 0;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -19,6 +32,15 @@ body {
 
 .list {
   list-style: none;
+}
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .header-logo,
@@ -40,6 +62,44 @@ body {
 }
 
 /*hadder*/
+
+.header .container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header-utils{
+  display: flex;
+}
+
+.header .header-tel{
+  margin-right: 50px;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  }
+
+.header-logo{
+margin-right: 85px;
+}
+
+.navigation-list{
+display: flex; 
+}
+
+.navigation-list-item:not(:last-child  ){
+margin-right: 50px;
+
+}
+
+.navigation-list-link{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .navigation-list-link,
 .header-tel,
 .header-mail {
