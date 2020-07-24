@@ -41,6 +41,13 @@ img{
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section{
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .container{
@@ -49,6 +56,10 @@ img{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-title{
+
 
 }
 
@@ -87,7 +98,7 @@ justify-content: space-between;
   display: flex;
 }
 
-.header .header-tel{
+.header .header-adress{
   margin-right: 50px;
 }
 
@@ -233,11 +244,11 @@ padding-bottom: 200px;
 }
 
 .about-title{
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .about-list-item:not(:last-child){
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .about-list{
@@ -359,8 +370,10 @@ align-items: center;
 .clients-item-list-link{
   width: 170px;
 height: 90px;
-margin-right: 30px;
+}
 
+.clients-list-item{
+margin-right: 30px;
 }
 
 .clients-title{
